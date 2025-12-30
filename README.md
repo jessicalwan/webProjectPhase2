@@ -1,26 +1,20 @@
-# BlueCareHub - Phase 2 Project
 
-## Project Description
-BlueCareHub is an online platform for booking doctor appointments.  
-It allows patients to view doctors, see available services and time slots, book appointments, and manage them.  
-The backend is built with **Node.js** and **MySQL**, while the frontend uses **React.js**.  
+Project Description
 
----
+BlueCareHub is an online doctor appointment booking platform.
+It allows patients to view available doctors, explore medical services, select time slots, and book appointments online.
+The system also allows managing appointments through a connected backend and database.
 
-## Technologies Used
-- **Frontend:** React.js, HTML, CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MySQL
-- **Version Control:** Git, GitHub
-- **Hosting:** Render / Railway (backend)
+The project is developed as part of CSCI426 – Advanced Web Programming (Phase 2).
 
----
+Technologies Used
 
-## Setup Instructions
+Frontend: React.js, HTML, CSS
 
-### Prerequisites
-- Node.js installed
-- MySQL installed
-- Git installed
+Backend: Node.js, Express.js
 
+Database: MySQL
 
+Version Control: Git, GitHub
+
+Hosting: Render / Railway (Backend)
