@@ -23,10 +23,4 @@ The backend is built with **Node.js** and **MySQL**, while the frontend uses **R
 - MySQL installed
 - Git installed
 
-### Steps
-1. Clone the repository:
-
-```bash
-git clone https://github.com/jessicalwan/webProjectPhase2.git
-cd webProjectPhase2
 
