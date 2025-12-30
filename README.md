@@ -1,4 +1,3 @@
-
 Project Description
 
 BlueCareHub is an online doctor appointment booking platform.
