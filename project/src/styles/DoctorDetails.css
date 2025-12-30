@@ -1,0 +1,94 @@
+.doctor-details-container {
+  max-width: 980px;
+  margin: 20px auto;
+  padding: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.doctor-header {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.doctor-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.doctor-info h2 { margin: 0; color: #0d47a1; }
+.specialty { color: #1976d2; margin-top: 6px; }
+.doctor-description { margin-top: 10px; color: #333; }
+
+.services-section,
+.day-section,
+.times-section {
+  background: white;
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.service-select,
+.day-select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  margin-top: 8px;
+}
+
+.times-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.time-btn {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #1976d2;
+  background: white;
+  cursor: pointer;
+}
+
+.time-btn.active {
+  background: linear-gradient(135deg,#0d47a1,#1976d2);
+  color: white;
+}
+
+.no-slots { color: #d9534f; font-weight: 600; }
+
+.set-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg,#0d47a1,#1976d2);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.rating {
+  margin-top: 10px;
+}
+
+.stars {
+  color: #ffd700;
+  font-size: 18px;
+}
+
+.rating-text {
+  margin-left: 8px;
+  color: #666;
+}

@@ -1,0 +1,324 @@
+/* Home.css - Enhanced Design with Minimal Changes */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Home Container */
+.home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Slideshow */
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  animation: subtleZoom 20s infinite alternate;
+}
+
+@keyframes subtleZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+/* Overlay for text readability */
+.slideshow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+/* Medical Icons Decorations */
+.medical-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.05;
+}
+
+.medical-icon {
+  position: absolute;
+  font-size: 40px;
+  animation: floatSlow 20s infinite linear;
+}
+
+.medical-icon:nth-child(1) { top: 15%; left: 10%; }
+.medical-icon:nth-child(2) { top: 25%; right: 10%; }
+.medical-icon:nth-child(3) { bottom: 30%; left: 15%; }
+.medical-icon:nth-child(4) { bottom: 20%; right: 15%; }
+.medical-icon:nth-child(5) { top: 50%; left: 5%; }
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/* Main Content */
+.home-content {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Hospital Name */
+.hospital-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* Welcome Text */
+.welcome-text {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 500px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Search Link */
+.search-link {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.search-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding-right: 35px;
+}
+
+/* Quick Info Cards */
+.quick-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.info-icon {
+  font-size: 24px;
+}
+
+.info-text h3 {
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.info-text p {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Slide Indicators */
+.slideshow-indicator {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.indicator-dot.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+.indicator-dot:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Bottom Info Bar */
+.info-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.bar-icon {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.bar-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-text strong {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.bar-text span {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hospital-name {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+  
+  .search-link {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+  
+  .info-card {
+    min-width: 130px;
+    padding: 12px;
+  }
+  
+  .info-bar {
+    padding: 12px 15px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-name {
+    font-size: 1.7rem;
+  }
+  
+  .quick-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .info-card {
+    width: 200px;
+  }
+  
+  .info-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .info-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Loading Animation for Slides */
+.slideshow {
+  animation: fadeInOut 4s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  33%, 66% {
+    opacity: 1;
+  }
+}
