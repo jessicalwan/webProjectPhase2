@@ -22,7 +22,24 @@ BlueCareHub/
 ├── database.sql → MySQL schema
 └── README.md
 
-Database schema
+# Screenshots
+### Homepage
+![Home](./screenshots/homepage.png)
+### doctor list page
+![doctorListpage](./screenshots/doctorListpage.png)
+### doctorSevices page
+![doctorSevices](./screenshots/doctorSevices.png)
+### Appointment Page
+![showsAppointment](./screenshots/showsAppointment.png)
+###confermation
+![confirmAppointment](./screenshots/confirmAppointment.png)
+### delete and update 
+![UpdateOrDeleteAppointment](./screenshots/UpdateOrDeleteAppointment.png)
+### FAQpage page
+![FAQpage](./screenshots/FAQpage.png)
+
+
+##Database schema
 CREATE TABLE `bookings` (
   `id` int(11) NOT NULL,
   `doctor_id` int(11) NOT NULL,
